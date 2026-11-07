@@ -1,0 +1,37 @@
+{
+  "name": "FlyBook — Gestionale servizi con drone",
+  "short_name": "FlyBook",
+  "description": "Lavori, clienti, entrate settimanali e mensili per riprese con drone, ricerca animali e termografia fotovoltaico.",
+  "lang": "it",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "any",
+  "background_color": "#0a1120",
+  "theme_color": "#0a1120",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
