@@ -368,10 +368,13 @@ label.fl{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.6
 
 /* ---------- mobile / PWA ---------- */
 @supports (padding: max(0px)) {
-  .app{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right));
-       padding-bottom:max(70px,calc(50px + env(safe-area-inset-bottom)))}
-}
-@media(max-width:760px){
+  .app{
+    padding-top:calc(22px + env(safe-area-inset-top));
+    padding-left:max(18px,env(safe-area-inset-left));
+    padding-right:max(18px,env(safe-area-inset-right));
+    padding-bottom:max(70px,calc(50px + env(safe-area-inset-bottom)))
+  }
+}@media(max-width:760px){
   body{font-size:14.5px}
   .topbar{position:static;padding:12px}
   .brand{min-width:0}
