@@ -374,18 +374,22 @@ label.fl{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.6
     padding-right:max(18px,env(safe-area-inset-right));
     padding-bottom:max(70px,calc(50px + env(safe-area-inset-bottom)))
   }
-}@media(max-width:760px){
-  body{font-size:14.5px}
-  .topbar{position:static;padding:12px}
-  .brand{min-width:0}
-  .brand p{display:none}
-  .tabs{
+.tabs{
   order:3;
   width:100%;
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
   justify-content:stretch;
   overflow:visible;
+  flex-wrap:initial
+}
+.tab{
+  min-height:44px;
+  padding:8px 4px;
+  font-size:12px;
+  white-space:nowrap;
+  touch-action:manipulation
+}  overflow:visible;
   flex-wrap:initial
 }
 .tab{
