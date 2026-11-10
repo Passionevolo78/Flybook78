@@ -379,11 +379,22 @@ label.fl{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.6
   .topbar{position:static;padding:12px}
   .brand{min-width:0}
   .brand p{display:none}
-  .tabs{order:3;width:100%;justify-content:flex-start;overflow-x:auto;-webkit-overflow-scrolling:touch;
-        flex-wrap:nowrap;scrollbar-width:none}
-  .tabs::-webkit-scrollbar{display:none}
-  .tab{flex:0 0 auto;padding:8px 12px;font-size:13px}
-  #btnNewJob{order:2;margin-left:auto}
+  .tabs{
+  order:3;
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  justify-content:stretch;
+  overflow:visible;
+  flex-wrap:initial
+}
+.tab{
+  min-height:44px;
+  padding:8px 4px;
+  font-size:12px;
+  white-space:nowrap;
+  touch-action:manipulation
+}  #btnNewJob{order:2;margin-left:auto}
   .kpi .val{font-size:22px}
   .cell{min-height:58px;padding:4px}
   .chip{font-size:9px}
